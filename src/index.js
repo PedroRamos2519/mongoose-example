@@ -1,4 +1,4 @@
-import { sum } from './helpers'
+import { totalYears } from './utils/inventors.util'
 
 const inventors = [
   { first: 'Albert', last: 'Einstein', year: 1879, passed: 1955 },
@@ -27,4 +27,9 @@ const people = [
 // 1. Filter the list of inventors for those who were born in the 1500's
 const fifteen = inventors.filter(inventor => (inventor.year >= 1500 && inventor.year < 1600));
 
+// Array.prototype.map()
+// 2. Give us an array of the inventor first and last names
 const fullNames = inventors.map(inventor => `${inventor.first} ${inventor.last}`);
+
+const result = totalYears(inventors)
+result
