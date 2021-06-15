@@ -1,4 +1,4 @@
-import { totalYears, fullNames } from './utils/inventors.util'
+import { totalYears, fullNames, fifteen } from './utils/inventors.util'
 
 const inventors = [
   { first: 'Albert', last: 'Einstein', year: 1879, passed: 1955 },
@@ -23,9 +23,8 @@ const people = [
   'Billings, Josh', 'Birrell, Augustine', 'Blair, Tony', 'Beecher, Henry', 'Biondo, Frank'
 ];
 
-// Array.prototype.filter()
-// 1. Filter the list of inventors for those who were born in the 1500's
-const fifteen = inventors.filter(inventor => (inventor.year >= 1500 && inventor.year < 1600));
+const resultFifteen = fifteen(inventors)
+resultFifteen
 
 const resultName = fullNames(inventors)
 resultName
