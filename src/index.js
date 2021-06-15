@@ -23,11 +23,11 @@ const people = [
   'Billings, Josh', 'Birrell, Augustine', 'Blair, Tony', 'Beecher, Henry', 'Biondo, Frank'
 ];
 
-const resultFifteen = fifteen(inventors)
-resultFifteen
+// const resultFifteen = fifteen(1500, 1600, inventors)
+// resultFifteen
 
 const resultName = fullNames(inventors)
 resultName
 
-const result = totalYears(inventors)
-result
+// const result = totalYears(inventors)
+// result
